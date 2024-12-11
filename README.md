@@ -1,2 +1,2 @@
 # devops-livecoding
-# this project is mine
+# this project is min
