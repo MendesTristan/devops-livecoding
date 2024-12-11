@@ -1,2 +1,4 @@
 # devops-livecoding
-# this project is min
+# this project is mine
+
+# the first project
