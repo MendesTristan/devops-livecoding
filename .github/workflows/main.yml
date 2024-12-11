@@ -19,8 +19,9 @@ jobs:
           java-version: 17
 
       - name: Build and test with Maven
-        working-directory: simple-api
-        run: mvn clean verify 
+        run: mvn -B verify sonar:sonar -Dsonar.projectKey=MendesTristan_devops-livecoding -Dsonar.organization=mendestristan -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=${{ secrets.SONAR_TOKEN }}  --file ./simple-api/pom.xml
+
+        
   
   build-and-push-docker-image:
     needs: test-backend
